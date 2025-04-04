@@ -9,7 +9,7 @@ function PlayerCard ({player, setSelectedPlayer}) {
             <p>Number: {player.jersey}</p>
             <button onClick={()=>
                 setSelectedPlayer(player.id)
-            }>Get More Info</button>
+            }>More Player Info</button>
         </div>
     )
 
