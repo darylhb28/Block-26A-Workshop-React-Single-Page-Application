@@ -1,0 +1,12 @@
+.playerCard{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: solid black 5px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+  }
