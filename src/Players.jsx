@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import PlayerCard from './PlayerCard'
 
 
-function Players ({}) {
+function Players ({setSelectedPlayer}) {
 const [players, setPlayers] = useState([])
+
 
     useEffect(()=>{
         async function fetchPlayers(){
@@ -22,7 +23,7 @@ const [players, setPlayers] = useState([])
         <div>
             {
                 players.map((player)=>{
-                    return <PlayerCard  key={player.id} player={player}/>
+                    return <PlayerCard  key={player.id} player={player} setSelectedPlayer={setSelectedPlayer}/>
                 })
             }
         </div>

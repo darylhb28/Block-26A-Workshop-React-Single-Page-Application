@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Players from './Players'
+import SelectedPlayer from './SelectedPlayer'
 
 
 function App() {
@@ -12,10 +13,10 @@ function App() {
     {
       selectedPlayer ?
       <div>
-          <SelectedPlayer />
+          <SelectedPlayer selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer}/>
       </div> :
     <div className="playerList">
-        <Players />
+        <Players setSelectedPlayer={setSelectedPlayer} />
     </div>
     }
     </>

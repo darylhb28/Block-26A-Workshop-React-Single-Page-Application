@@ -1,13 +1,15 @@
 import "./PlayerCard.css"
 
-function PlayerCard ({player}) {
+function PlayerCard ({player, setSelectedPlayer}) {
     return (
         <div className="playerCard">
             <h2>{player.full_name}</h2>
             <p>{player.position}</p>
             <p>{player.team.display_name}</p>
             <p>Number: {player.jersey}</p>
-            <p>Hometown: {player.birth_place}</p>
+            <button onClick={()=>
+                setSelectedPlayer(player.id)
+            }>Get More Info</button>
         </div>
     )
 
