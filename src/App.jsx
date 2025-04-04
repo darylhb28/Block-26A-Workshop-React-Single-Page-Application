@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    <h1>MLB Players</h1>
     {
       selectedPlayer ?
       <div>

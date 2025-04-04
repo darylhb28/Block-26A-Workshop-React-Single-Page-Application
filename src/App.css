@@ -1,14 +1,23 @@
 #root{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flexbox;
   justify-items: center;
   row-gap: 20px;
   column-gap: 20px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 
+
 .playerList{
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   row-gap: 20px;
