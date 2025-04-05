@@ -14,7 +14,7 @@ function PlayerCard({ player, setSelectedPlayer, setFavoritePlayer, favoritePlay
         <br />
   
         {favoritePlayer === player.id ? (
-          <button disabled>Marked as Favorite!</button>
+          <button disabled> ✅ Marked as Favorite!</button>
         ) : (
           <button
             onClick={() => {

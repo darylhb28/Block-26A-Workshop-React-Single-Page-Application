@@ -38,7 +38,7 @@ function SelectedPlayer({
           <p>Years in MLB: {2025 - player.debut_year}</p>
 
           {favoritePlayer === player.id ? (
-            <button disabled>Marked as Favorite!</button>
+            <button disabled>✅ Marked as Favorite!</button>
           ) : (
             <button onClick={() => setFavoritePlayer(player.id)}>
               Mark as Favorite

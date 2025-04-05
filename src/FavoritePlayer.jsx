@@ -20,7 +20,7 @@ function FavoritePlayer({favoritePlayer, setFavoritePlayer}) {
         return(
         <>{ player && (
             <div className="favoriteplayerCard">
-                <h1>*FAVORITE*</h1>
+                <h1>🌟 FAVORITE 🌟 </h1>
                <h2>{player.full_name}</h2>
                 <p>{player.position}</p>
                 <p>{player.team.display_name}</p>
